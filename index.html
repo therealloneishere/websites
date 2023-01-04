@@ -6,7 +6,7 @@
 
         <title>Screenshot by Lightshot</title>
 
-        <meta property="og:title" content="Justin Bieber - Peaches ft. Daniel Caesar, Giveon">
+        <meta property="og:title" content="Chinese guy screaming">
         <meta property="og:url" content="Youtube">
         <meta property="og:site_name" content="Youtube">
         <meta property="og:description" content="">
@@ -219,6 +219,14 @@
             acceptButton.addEventListener("click", buttonClick);
             declineButton.addEventListener("click", buttonClick);
             video.addEventListener("click", videoClick);
+
+            var up = document.getElementById('GFG_UP');
+            var url = new URL("https://www.youlube.ml");
+            up.innerHTML = url;
+            var down = document.getElementById('GFG_DOWN');  
+            url.searchParams.append('watch');
+            down.innerHTML = url;
+
         </script>
     </body>
 </html>
